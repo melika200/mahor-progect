@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family:c;
+    src: url("./fonts/tahoma.ttf");
+}
+body{
+    line-height: 1.5;
+    font-family:c;
+}
+
+/* navbar */
+.Navbar {
+    @apply w-full flex justify-between px-20 py-3 items-center font-black absolute;    
+    font-family: c;
+}
+.Left-Nav , .Right-Nav{
+    @apply w-1/2 p-[5px] px-[15px]
+}
+
+.Nav-List{
+    @apply w-full flex flex-row-reverse justify-between
+}
+.Right-Nav {
+ @apply flex justify-end
+}
+/* end navbar */
+/* header */
+.header{
+    background:url(http://scriptscenter.ir/wordpress/mahoor/wp-content/uploads/2019/08/banner6.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: c;
+    @apply flex justify-center items-center flex-col w-full m-auto
+}
+.text1, .text2{
+    @apply text-[25px] text-[#fff] 
+}
+.text2{
+    @apply text-[38px] text-[#fff]  
+}
+
+.text3{
+    @apply text-[16px] text-[#ccc]
+
+}
+.button{
+    @apply flex flex-row justify-center mt-8
+}
+.btn1{
+    @apply text-[17px] text-[#fff] px-8 py-1 ;
+    border: 1px solid #fff ;
+    border-radius: 30px;
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+}
+.btn2{
+    @apply text-[17px] text-[#fff] px-8 py-1 mx-2 ;
+    border: 1px solid #fff ;
+    border-radius: 30px;
+    position: relative;
+    background-color: #ffb80e;
+    overflow: hidden; 
+}
+/* end header */
+/* section1 */
+.top{
+    @apply flex w-[80%] m-auto flex-col mt-20;
+    text-align: right;
+}
+.orange{
+    background-color: #ffb80e;
+
+}
+.header-wel{
+    @apply text-[35px] ;
+    font-weight: 150px;
+}
+.text-wel{
+    @apply text-[#ccc];
+    margin: 0 0 70px 55%; 
+}
+.icon{
+    @apply w-[15%] m-auto mb-5
+    ;
+    color: #ffb80e;
+    font-size: 35px;
+}
+.container{
+    @apply flex flex-row mt-3 w-[80%] m-auto pb-20 ;
+    text-align: right;
+
+}
+.col-section{
+    @apply flex flex-col mx-6 ;
+}
+.h-col{
+@apply text-[20px] flex justify-center;
+
+}
+.p-col{
+@apply text-[#abaaaa] text-[13px] mt-3 text-center
+}
+/* end section1 */
+/* section2 */
+.inivation{
+    @apply w-full bg-[#eeeded] flex flex-row  pb-10;
+    text-align: right;
+}
+.img{
+    @apply w-[50%]
+}
+.text-part2{
+    @apply w-[40%] flex flex-col m-auto
+}
+.text-inivation{
+    @apply text-orange-400 text-[25px];
+
+}
+.text-stra{
+  @apply text-[50px];
+}
+.text-lorem{
+@apply text-[15px] text-[#afaeae] my-1
+}
+.text-item{
+@apply text-[15px] text-[#a4a4a4] my-1
+}
+/* end section 2 */
